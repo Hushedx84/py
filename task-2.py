@@ -54,7 +54,7 @@ def get_items(name):
 @app.route('/store/<string:name>', methods=['DELETE'])
 def delete_store(name):
     global stores
-    # Проверяем, существует ли магазин с указанным названием
+    # Перевіряємо чи існує магазин зі вказаною назвою
     for store in stores:
         if store['name'] == name:
             stores.remove(store)
